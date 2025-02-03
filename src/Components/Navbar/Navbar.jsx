@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './navbar.css';
+import './Navbar.css';
 import logo from '../../assets/Mylogo.png';
 import moon from '../../assets/moon.png';
 import sun from '../../assets/sun.png';

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import './footer.css';
+import './Footer.css';
 import MyContext, { useDark } from "../../App";
 
 const Footer = () =>{
