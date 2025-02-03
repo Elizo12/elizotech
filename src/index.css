@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+}
+body{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+:root{
+    --primary-color: rgb(30, 30, 30);;
+    --secondary-color: white;
+    
+}
+.light-theme{
+    --primary-color: white;
+    --secondary-color: rgb(30, 30, 30);
+}

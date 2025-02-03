@@ -1,0 +1,106 @@
+.navbar{
+    background: var(--primary-color);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    object-fit: cover;
+    height: 3.5rem;
+    width: 4rem;
+    cursor: pointer;
+}
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+.desktopMenuListItem:hover{
+    color: rgb(48, 112, 141);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(48, 112, 141);
+}
+.desktopMenuBtnImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+.desktopMenuBtn{
+    background: var(--secondary-color);
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 0 1rem;
+}
+.active{
+    color: rgb(48, 112, 141);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(48, 112, 141);
+}
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: var(--primary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.5rem;
+}
+.ListItem{
+    color: var(--secondary-color);
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: var(--primary-color);
+}
+.ListItem:hover{
+    background: rgb(50, 50, 50);
+}
+@media screen and (max-width: 720px) {
+    .mobMenu{
+        display: flex;
+    }
+    .navMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+    object-fit: cover;
+}
+:root{
+    --primary-color: rgb(30, 30, 30);
+    --secondary-color: #edf2fc;
+    
+}
+/* .light-theme{
+    --primary-color: white;
+    --secondary-color: rgb(30, 30, 30);
+} */
