@@ -5,6 +5,7 @@ import moon from '../../assets/moon.png';
 import sun from '../../assets/sun.png';
 import Menu from '../../assets/menu_icon.svg';
 import contactImg from '../../assets/contact.png';
+import other from '../../assets/menu_icon.png';
 import {Link} from 'react-scroll';
 import { useDark } from "../../App";
 
@@ -27,7 +28,7 @@ const Navbar = () =>{
                 <img src={contactImg} alt="" className="desktopMenuBtnImg"/>Contact Me
             </button>
             <img src={darkTheme? sun:moon} alt="" id="icon" onClick={toggleTheme}/>
-            <img src={Menu} alt="Menu" style={{background: darkTheme? "": "gray"}} className="mobMenu" onClick={()=>{setShowMenu(!showMenu)}}/>
+            <img src={darkTheme? Menu:other} alt="Menu" className="mobMenu" onClick={()=>{setShowMenu(!showMenu)}}/>
             {showMenu?
                 <div className="navMenu" >
                 <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>Home</Link>

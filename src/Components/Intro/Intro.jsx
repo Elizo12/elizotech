@@ -17,7 +17,7 @@ const Intro = () =>{
                 <span className="hello">Hello</span>
                 <span className="introText">I'm <span class="introName">Elijah</span> <br/>Website Developer</span>
                 <p className="introPara">I am a skilled and passionate web developer with experience in creating <br/>visually appealing and user-friendly websites.</p>
-                <Link><button className="btn"><img src={hire} alt="HireMe" className="btnImg"/>Hire Me</button></Link>
+                <Link spy={true} smooth={true} offset={-50} duration={500} to="contact"><button className="btn"><img src={hire} alt="HireMe" className="btnImg"/>Hire Me</button></Link>
             </div>
             <img src={bg} alt="Profile" className="bg"/>
        </motion.section>
