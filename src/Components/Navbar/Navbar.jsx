@@ -27,14 +27,14 @@ const Navbar = () =>{
                 <img src={contactImg} alt="" className="desktopMenuBtnImg"/>Contact Me
             </button>
             <img src={darkTheme? sun:moon} alt="" id="icon" onClick={toggleTheme}/>
-            <img src={Menu} alt="Menu" className="mobMenu" onClick={()=>{setShowMenu(!showMenu)}}/>
+            <img src={Menu} alt="Menu" style={{background: darkTheme? "": "gray"}} className="mobMenu" onClick={()=>{setShowMenu(!showMenu)}}/>
             {showMenu?
                 <div className="navMenu" >
                 <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>Home</Link>
                 <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>About</Link>
                 <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>Portfolio</Link>
-                <Link activeClass="active" to="clients" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>Clients</Link>
-                {/* <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>Contact</Link> */}
+                {/* <Link activeClass="active" to="clients" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>Clients</Link> */}
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=>{setShowMenu(false)}}>Contact</Link>
             </div>:null
             }
         </nav>
